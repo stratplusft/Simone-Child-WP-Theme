@@ -2,7 +2,7 @@
 Theme Name: Child of simone
 Author: W D Dunnett
 Description: Child Theme of Simone originally for the RHS Club in London Website
-Version: 0.1
+Version: 0.2
 Template: simone
 */
 .header-background-image .title-box {
@@ -161,23 +161,56 @@ div.thin img {
     padding-left: 2.5em;
 }
 
-@media screen and (max-width: 650px) {
-    div.pic li.biog {      
-    height: 22em;    
-    width: 77%;
-    }
-    div.pic li.duties {    
-    width: 58%;
+@media screen and (max-width: 814px) {
+    .main-navigation a {    
+        padding: 1.3em .5em;
     }
 }
-@media screen and (max-width: 612px) {
-    div.pic li.member {    
-    height: 4em;
+@media screen and (max-width: 700px){
+    .main-navigation a {
+        padding: 1.3em .2em;
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 620px){
+    .menu-toggle {
+        display: inline-block;
+        height: 3.9em;
+        padding: 0 1em;
+        font-weight: normal;
+        font-size: 14px;
+        font-size: 1.4rem;
+        text-decoration: none;
+        line-height: 3.75em;
+        color: white;
+    }
+    .main-navigation ul {
+        display: none;
+        padding-left: 0;
+    }
+    .main-navigation a {
+        font-size:14px;
+        font-size: 1.4rem; 
+   }
+}
+@media screen and (max-width: 650px) {
+    div.pic li.biog {      
+        height: 22em;    
+        width: 92%;
     }
     div.pic li.duties {    
-    margin: -1.4em auto 0 3%;
-    text-align: left;
-   
+        width: 58%;
+    }
+}
+
+@media screen and (max-width: 612px) {
+    div.pic li.member {    
+        height: 4em;
+    }
+    div.pic li.duties {    
+        margin: -1.4em auto 0 3%;
+        text-align: left;   
     }
 }
 @media screen and (max-width: 543px) {
@@ -187,12 +220,31 @@ div.thin img {
 }
 @media screen and (max-width: 485px) {
        div.pic li.biog {          
-        height: 42em;
+        height: 28em;
         padding-top:2.5em;
         } 
         div.pic li.duties {
             margin-top: -2.4em;          
         }
+}
+@media screen and (max-width: 420px) {
+    div.pic li.member {    
+        height: 11em;
+        width: 94%;
+    }
+    .colHalf {
+        width: 100%;
+    }
+    .site-title a, .site-description {
+        font-size: 75%;
+    }
+}
+@media screen and (max-width: 320px) {    
+    div.pic li.member {
+        padding: 0.5em .25em .25em 0.25em;
+        text-align: left;
+        width: 100%;
+    }    
 }
 
 /* add logo */
